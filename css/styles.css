@@ -527,7 +527,7 @@ footer {
   margin-bottom: 2em; }
 
 img {
-  transition: transform 1s cubic-bezier(0.31, 0.67, 0.56, 1.39); }
+  transition: transform 1s cubic-bezier(0.9, 0.62, 0.78, 1.18); }
 
 .product-images {
   display: flex;
