@@ -1,0 +1,21 @@
+%main-font {
+  font-family: $helvetica-font-stack;
+}
+
+%text-center {
+  text-align: center;
+}
+
+%center {
+  margin: 0 auto;
+}
+
+%clearfix {
+  &:before {
+    content:" ";
+    display: block;
+    height:0;
+    clear:both;
+    visibility: hidden;
+}
+}

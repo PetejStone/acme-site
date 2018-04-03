@@ -1,0 +1,110 @@
+main {
+  margin-top: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  & div {
+    @extend %center;
+    max-width: 100%;
+    & img {
+      @extend %center;
+    }
+  }
+}
+
+header p {
+  background-color: red;
+  height: 5em;
+  @include flexy(flex, column, null, center);
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to bottom left,  #fff,#0ac20a,#85e085,#33ff33,#4dff4d,#85e085,#66ff99, #fff);
+  color: $white;
+  text-shadow: 1px 1px 1px $black;
+  font-size: 2rem;
+  margin: 0;
+  & > span {
+    font-size: 12px;
+    border-top: 1px solid $white;
+    @extend %center;
+    width: 20%;
+  }
+}
+
+body {
+  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: $helvetica-font-stack;
+  font-weight: $font-weight--thin;
+}
+
+h2,
+h1,
+h3 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+p {
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.call-action {
+  margin: 0;
+  transform: translate(0%, 200%);
+  z-index: 2;
+  color: $white;
+  background-color: rgba(0, 230, 138, .5);
+  margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
+  @include mq(small){
+    display: none;
+  }
+
+}
+
+
+
+
+.overlay {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 15px;
+  @include flexy(flex, column, null, center);
+  color: $white;
+  padding: 1em;
+  max-width: 100%;
+  transform: translate(1000%, -100%);
+  opacity: 0;
+  & > p {
+    font-size: 14px;
+    margin: 0;
+  }
+  & > h3 {
+    margin-top: 0;
+  }
+}
+
+
+.connect,
+.contact {
+  margin-top: 1em;
+  border-top: 1px solid $light-grey;
+  width: 75%;
+  @extend %center;
+}
+
+aside {
+
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 10px;
+  margin-bottom: 2em;
+}
+
+img {
+  transition: transform 1s cubic-bezier(.31,.67,.56,1.39);
+
+
+}
