@@ -70,7 +70,6 @@ for (let i=0; i<image.length; i++) {
 
           if (window.innerWidth <= 500) {
             image[i].addEventListener('touchstart', ()=> {
-              callAction[i].style.display = 'none';
               overlay.style.opacity = 1;
 
 
