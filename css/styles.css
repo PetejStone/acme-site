@@ -492,7 +492,8 @@ p {
   color: #fff;
   background-color: rgba(0, 230, 138, 0.5);
   margin: 0 auto;
-  border-radius: 10px 10px 0px 0px; }
+  border-radius: 15px 15px 0px 0px;
+  text-shadow: 1px 0px 0px #000; }
   @media (min-width: 500px) {
     .call-action {
       display: none; } }

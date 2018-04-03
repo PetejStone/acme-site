@@ -70,9 +70,10 @@ for (let i=0; i<image.length; i++) {
 
           if (window.innerWidth <= 500) {
             image[i].addEventListener('touchstart', ()=> {
-              overlay.style.opacity = 1;
               callAction[i].style.display = 'none';
-              console.log('h3llo');
+              overlay.style.opacity = 1;
+
+
             });
           }
 
