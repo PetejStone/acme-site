@@ -508,7 +508,7 @@ p {
   padding: 1em;
   max-width: 100%;
   transform: translate(1000%, -100%);
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 5px #00e68a;
   opacity: 0; }
   .overlay > p {
     font-size: 14px;
