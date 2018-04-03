@@ -71,6 +71,7 @@ for (let i=0; i<image.length; i++) {
           if (window.innerWidth <= 500) {
             image[i].addEventListener('touchstart', ()=> {
               overlay.style.opacity = 1;
+              overlay.style.textShadow = "1px 1px 5px #00e68a";
 
 
             });
