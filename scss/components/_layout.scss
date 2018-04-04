@@ -119,12 +119,13 @@ img {
 	height: 100%;
 	z-index: 9999;
 	background: $white;
+}
   //centers the loading icon
-  & > svg {
+.lds-spin {
+    transform: scale(0.5);
     position: fixed;
-  	left: 50%;
-  	top: 50%;
-    margin-top: -50px;
-    margin-left: -50px
-  }
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
 }
