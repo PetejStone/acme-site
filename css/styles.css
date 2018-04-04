@@ -447,7 +447,8 @@ nav {
 main {
   margin-top: 5em;
   margin-left: 1em;
-  margin-right: 1em; }
+  margin-right: 1em;
+  display: none; }
   main div {
     max-width: 100%; }
 

@@ -7,7 +7,9 @@ const callAction = document.getElementsByClassName('call-action');
 
 
 
-
+document.addEventListener("DOMContentLoaded",()=> {
+  main.style.display = 'block';
+  document.getElementById('loading').style.display = 'none';
 //sticky nav
 window.onscroll = function() {myFunction();};
 
@@ -77,12 +79,8 @@ for (let i=0; i<image.length; i++) {
             });
           }
 
-
-
-
-
-
-}); //end of loop
-
+        }); //end of loop
 
 } // end of event listener
+
+});
