@@ -75,7 +75,6 @@ p {
   padding: 1em;
   max-width: 100%;
   transform: translate(1000%, -100%);
-  
   font-weight: $font-weight--medium;
   opacity: 0;
   & > p {
@@ -109,5 +108,23 @@ footer {
 img {
   transition: transform .5s cubic-bezier(.42,0,.58,1);
 
+}
 
+//positions loader overlay
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: $white;
+  //centers the loading icon
+  & > svg {
+    position: fixed;
+  	left: 50%;
+  	top: 50%;
+    margin-top: -50px;
+    margin-left: -50px
+  }
 }

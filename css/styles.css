@@ -530,6 +530,21 @@ footer {
 img {
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1); }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff; }
+  .loader > svg {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px; }
+
 .product-images {
   display: flex;
   flex-direction: column;

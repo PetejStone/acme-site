@@ -5,7 +5,9 @@ const aside = document.getElementsByTagName('aside')[0].children;
 const html = document.getElementsByTagName('html')[0];
 const callAction = document.getElementsByClassName('call-action');
 
-
+$(window).on('load',function(){
+   $('.loader').fadeOut();
+});
 
 
 //sticky nav
@@ -49,6 +51,7 @@ for (let i=0; i<image.length; i++) {
     callAction[i].style.width = image[i].width.toString()+"px";
   });
 
+
   window.addEventListener('scroll', ()=> {
     let scrollPosition = 100;
     for (let i=0; i< image.length; i++) {
@@ -70,19 +73,13 @@ for (let i=0; i<image.length; i++) {
 
           if (window.innerWidth <= 500) {
             image[i].addEventListener('touchstart', ()=> {
+              callAction[i].style.display = 'none';
               overlay.style.opacity = 1;
-              overlay.style.textShadow = "1px 1px 5px #00e68a";
 
 
             });
           }
 
-
-
-
-
-
-}); //end of loop
-
+        }); //end of loop
 
 } // end of event listener
