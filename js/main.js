@@ -9,6 +9,9 @@ $(window).on('load',function(){
    $('.loader').fadeOut();
 });
 
+window.addEventListener("DOMContentLoaded", ()=> {
+
+
 
 //sticky nav
 window.onscroll = function() {myFunction();};
@@ -83,3 +86,5 @@ for (let i=0; i<image.length; i++) {
         }); //end of loop
 
 } // end of event listener
+
+});
