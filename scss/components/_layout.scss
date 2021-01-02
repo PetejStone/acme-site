@@ -17,12 +17,8 @@ header p {
   @include flexy(flex, column, null, center);
   border-radius: 10px 10px 0 0;
   background: linear-gradient(to bottom left,  #fff,#0ac20a,#85e085,#33ff33,#4dff4d,#85e085,#66ff99, #fff);
-  color: $white;
-  text-shadow: 1px 1px 1px $black;
-  font-size: 2rem;
   margin: 0;
   & > span {
-    font-size: 12px;
     border-top: 1px solid $white;
     @extend %center;
     width: 20%;
@@ -33,21 +29,17 @@ body {
   margin: 0;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: $helvetica-font-stack;
-  font-weight: $font-weight--thin;
+
 }
 
 h2,
 h1,
 h3 {
-  text-align: center;
+
   margin-top: 1em;
 }
 
-p {
-  text-align: center;
-  letter-spacing: .5px;
-}
+
 
 .call-action {
   margin: 0;
@@ -71,14 +63,11 @@ p {
   background-color: rgba(0,0,0,.5);
   border-radius: 15px;
   @include flexy(flex, column, null, center);
-  color: $white;
   padding: 1em;
   max-width: 100%;
   transform: translate(1000%, -100%);
-  font-weight: $font-weight--medium;
   opacity: 0;
   & > p {
-    font-size: 14px;
     margin: 0;
   }
   & > h3 {
@@ -95,13 +84,10 @@ p {
   @extend %center;
 }
 
-aside {
 
-}
 
 footer {
   margin-top: 3em;
-  font-size: 10px;
   margin-bottom: 2em;
 }
 

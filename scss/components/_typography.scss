@@ -1,0 +1,37 @@
+body {
+  font-family: $helvetica-font-stack;
+  font-weight: $font-weight--thin;
+}
+
+header p {
+  color: $white;
+  text-shadow: 1px 1px 1px $black;
+  font-size: 2rem;
+  & > span {
+    font-size: 12px;
+
+  }
+}
+
+h2,
+h1,
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+.overlay {
+  color: $white;
+  font-weight: $font-weight--medium;
+  & > p {
+    font-size: 14px;
+  }
+}
+
+footer {
+  font-size: 10px;  
+}
